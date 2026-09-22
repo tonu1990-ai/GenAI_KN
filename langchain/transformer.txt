@@ -1,0 +1,46 @@
+Here's a simple breakdown of the Transformer architecture, the design behind models like GPT, BERT, and Claude.
+
+## The Big Idea
+
+Before transformers, models read text one word at a time, in order (like RNNs). This was slow and made it hard to connect words that were far apart in a sentence. Transformers instead look at **all words at once** and figure out which ones matter most to each other. This is called **attention**.
+
+## The Main Building Blocks
+
+**1. Tokenization & Embeddings**
+Text is first broken into tokens (words or word-pieces), and each token is turned into a vector of numbers — basically a mathematical "fingerprint" that captures meaning.
+
+**2. Positional Encoding**
+Since transformers look at all words simultaneously (not in order), they need a way to know *where* each word sits in the sentence. Positional encoding adds this "position info" to each token's vector.
+
+**3. Self-Attention (the heart of the transformer)**
+For every word, the model asks: "Which other words in this sentence should I pay attention to, to understand this word better?"
+
+For example, in "The cat sat on the mat because *it* was tired," attention helps the model figure out that "it" refers to "cat," not "mat."
+
+Each word gets three roles:
+- **Query** — what am I looking for?
+- **Key** — what do I contain?
+- **Value** — what information do I actually offer?
+
+The model compares queries and keys to decide how much attention each word should pay to every other word, then blends the values accordingly.
+
+**4. Multi-Head Attention**
+Instead of doing this attention process once, the model does it several times in parallel ("heads"), each potentially focusing on a different kind of relationship (grammar, meaning, position, etc.). The results are combined.
+
+**5. Feed-Forward Layers**
+After attention, each word's representation passes through a small neural network that processes it further.
+
+**6. Stacking Layers**
+A transformer stacks many of these attention + feed-forward blocks on top of each other (sometimes dozens or hundreds), letting the model build increasingly rich understanding.
+
+**7. Output Layer**
+At the end, the model uses this processed information to do its task — predict the next word, classify text, translate, etc.
+
+## Why It Was a Breakthrough
+- **Parallelizable**: unlike RNNs, transformers process all words at once, making them much faster to train on modern hardware (GPUs).
+- **Long-range understanding**: attention lets the model directly connect distant words, no matter how far apart.
+- **Scalable**: this architecture scales remarkably well with more data and compute, which is part of why large language models became possible.
+
+## Quick Analogy
+Think of a transformer like a classroom discussion where everyone can hear everyone else at once. When you're trying to understand a sentence, instead of only remembering the last word you heard, you can "attend" to any earlier word that's relevant — instantly.
+
