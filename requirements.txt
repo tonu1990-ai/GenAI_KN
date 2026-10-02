@@ -1,6 +1,12 @@
 dotenv
 ipykernel
+langchain
 langchain_community
+langchain_classic
 langchain_text_splitters
 langchain-openai
+sentence-transformers
+langchain_huggingface
+beautifulsoup4
 chromadb
+faiss-cpu
