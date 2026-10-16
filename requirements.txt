@@ -10,3 +10,6 @@ langchain_huggingface
 beautifulsoup4
 chromadb
 faiss-cpu
+litellm
+gradio
+plotly
