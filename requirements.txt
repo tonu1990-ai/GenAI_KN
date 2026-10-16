@@ -13,3 +13,4 @@ faiss-cpu
 litellm
 gradio
 plotly
+langchain_chroma
