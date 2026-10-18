@@ -16,7 +16,7 @@ After her teaching career, Shari moved toward the technology industry, developin
 
 Her experience at AIMLSpectrum represented an important transition from academic teaching to industry-oriented AI work. It provided her with professional exposure to the field of data science and helped broaden her understanding of the practical applications of artificial intelligence.
 
-Shari is currently expanding his capabilities toward becoming a full-stack AI developer. His learning activities include HTML, CSS, JavaScript, React, Python-based backend development, Generative AI, and agentic artificial intelligence.
+Shari is currently expanding her capabilities toward becoming a full-stack AI developer. Her learning activities include HTML, CSS, JavaScript, React, Python-based backend development, Generative AI, and agentic artificial intelligence.
 
 Shari is currently working as a Junior Developer at AITrich, located at Infopark, Kochi, Kerala. Her present career focus is on developing her capabilities as an AI-oriented software developer while strengthening her understanding of modern programming frameworks and artificial intelligence technologies.
 One of her current software development projects is a Customized Tour Management System. The project involves building a tourism-oriented application using modern web development technologies. It provides an opportunity to combine frontend development, backend programming, database interaction, and potential AI-powered functionalities into a practical application.
